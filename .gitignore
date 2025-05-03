@@ -4,6 +4,7 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 lerna-debug.log*
 .pnpm-debug.log*
 
@@ -90,6 +91,8 @@ out
 # Nuxt.js build / generate output
 .nuxt
 dist
+dist-ssr
+*.local
 
 # Gatsby files
 .cache/
@@ -103,6 +106,9 @@ dist
 # vuepress v2.x temp and cache directory
 .temp
 .cache
+
+# vite builds
+.vite/
 
 # vitepress build output
 **/.vitepress/dist
@@ -134,3 +140,14 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
